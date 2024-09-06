@@ -10,6 +10,7 @@ using SOD.Common.Helpers;
 namespace BusinessAsUsual;
 
 [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
+[BepInDependency(SOD.Common.Plugin.PLUGIN_GUID, BepInDependency.DependencyFlags.HardDependency)]
 public class BusinessAsUsual : BasePlugin
 {
     public const string PLUGIN_GUID = "Severedsolo.SOD.BusinessAsUsual";
